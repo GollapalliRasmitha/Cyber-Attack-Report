@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Awareness & Detection | Cyber Guardian 2026</title>
+    <meta name="description" content="Educating users about AI-generated deepfakes, detection methods, and prevention strategies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for FontAwesome -->
+    <!-- Using a CDN for icons since I cannot download files directly to the user's machine reliably without a specific tool for it, 
+         but for a static site, a CDN link is standard. If not available, I will use text/SVG fallbacks in design. -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="icon">🛡️</span> Cyber<span class="highlight">Guardian</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">What are Deepfakes?</a></li>
+            <li><a href="#detection">Detection</a></li>
+            <li><a href="#prevention">Prevention</a></li>
+            <li><a href="#reporting" class="btn-alert">Report Incident</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Trust Your Eyes? <br><span class="glitch" data-text="Think Again.">Think Again.</span></h1>
+            <p>Welcome to 2026. Artificial Intelligence can simulate reality. Learn to distinguish truth from fabrication.</p>
+            <div class="cta-group">
+                <a href="#detection" class="btn-primary">How to Spot a Fake</a>
+                <a href="#reporting" class="btn-secondary">Report Fraud</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <!-- Abstract visualization of digital face scanning -->
+            <div class="scan-overlay"></div>
+            <div class="face-grid"></div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">What are Deepfakes?</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="icon-header">🎬</div>
+                    <h3>AI Video Synthesis</h3>
+                    <p>Deepfakes use Generative Adversarial Networks (GANs) to swap faces or manipulate expressions in video with hyper-realistic changes.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-header">🔊</div>
+                    <h3>Voice Cloning</h3>
+                    <p>AI can analyze a few seconds of audio to clone a person's voice, allowing scammers to impersonate loved ones or CEOs.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-header">🆔</div>
+                    <h3>Synthetic Identity</h3>
+                    <p>Entirely new "people" can be generated who never existed, often used for fake profiles and social engineering bots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="detection" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Detection Guide: Spot the Glitch</h2>
+            <div class="detection-interface">
+                <div class="detection-points">
+                    <div class="point" data-target="eyes">
+                        <h4>1. Note the Eyes</h4>
+                        <p>Look for unnatural blinking patterns (too fast/slow) or shadows that don't match the scene lighting.</p>
+                    </div>
+                    <div class="point" data-target="mouth">
+                        <h4>2. Lip Sync & Texture</h4>
+                        <p>Audio-visual lag is common. Also, check for blurring inside the mouth or missing teeth details.</p>
+                    </div>
+                    <div class="point" data-target="edges">
+                        <h4>3. Face Edges</h4>
+                        <p>Blurry hairlines or flickering at the edge of the face where the AI mask meets the original video.</p>
+                    </div>
+                    <div class="point" data-target="skin">
+                        <h4>4. Skin Tone</h4>
+                        <p>Inconsistent skin tone between the face and the neck/body is a major red flag.</p>
+                    </div>
+                </div>
+                <div class="interactive-demo">
+                    <div class="fake-frame">
+                        <div class="scan-line"></div>
+                        <p class="status-text">ANALYZING MEDIA...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proof" class="section">
+        <div class="container">
+            <h2 class="section-title">Proof of Personhood</h2>
+            <p class="subtitle">In an era of AI, verifying humanity is crucial.</p>
+            <div class="concepts-row">
+                <div class="concept">
+                    <h3>Digital Watermarking</h3>
+                    <p>Invisible cryptographic signatures embedded in media at the point of capture (C2PA standards) to prove authenticity.</p>
+                </div>
+                <div class="concept">
+                    <h3>Liveness Detection</h3>
+                    <p>Challenge-response tests (e.g., "turn your head left") used by banking apps to ensure a real user is present.</p>
+                </div>
+                <div class="concept">
+                    <h3>Blockchain Identity</h3>
+                    <p>Decentralized identifiers (DIDs) that allow individuals to own their digital likeness and verify content they publish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prevention" class="section">
+        <div class="container">
+            <h2 class="section-title">Prevention & Awareness</h2>
+            <ul class="prevention-list">
+                <li><strong>Don't Trust Caller ID:</strong> Numbers can be spoofed. Hang up and call back on a verified line.</li>
+                <li><strong>Verify Requests:</strong> If a "relative" asks for money via voice note, verify with a secret code word.</li>
+                <li><strong>Check Metadata:</strong> Use tools that read C2PA/IPTC metadata to check image history.</li>
+                <li><strong>Limit Public Data:</strong> High-res photos and voice samples online are training data for AI.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="reporting" class="section alert-section">
+        <div class="form-container">
+
+            <h2 class="section-title" style="text-align: center;">🚨 Report Suspected Deepfake or Fake Media Incident</h2>
+        <br><br>
+            <p class="report-text">If you encounter deepfake fraud, submit the details below.</p>
+            <br>
+
+            <form id="reportForm" enctype="multipart/form-data" style="background-color: black;">
+
+                <label>Name</label><br><input type="text" name="name" placeholder="Your Name" required>
+                
+<br>
+                <label>Description</label><br><textarea name="description" placeholder="Describe the incident" required></textarea>
+<br>
+                <label>Upload Evidence</label><br><input type="file" name="media" accept="image/*,video/*">
+<br>
+                <label>Submit</label><br><button type="submit" class="report-btn">Submit Report</button>
+
+            </form>
+
+            <p id="responseMessage"></p>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CyberGuardian Awareness Platform. Education use only.</p>
+            <p>Designed for a safer digital future.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
